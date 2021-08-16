@@ -1,0 +1,632 @@
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #F2F2F0;
+}
+
+
+/*---------------------------------------------headers-------------------------------------------*/
+h1{
+  text-align: center;
+  font-size: 40px;
+  color: #84A59D;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2{
+  font-size: 18px;
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);;
+}
+
+h5{
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h6{
+  text-align: center;
+  color: #F6BD60;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  margin: 2%;
+
+}
+
+/*---------------------------------------Navigation--------------------------------------------------*/
+.navbar {
+  overflow: hidden;
+  background-color: #F6BD60;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Links inside the navbar */
+.navbar a {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 40px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.dropdown i{
+  padding-left: 5px;
+}
+/* Add a red background color to navbar links on hover 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #b4a08757;
+}*/
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {font-size: 18px;
+  font-size: 18px;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #F2F2F0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+/*------------------------------------------------Carousel--------------------------------------------*/
+
+body {
+  background: #F2F2F0;
+}
+.container {
+  width: 90%;
+  margin:40px auto;
+}
+.carousel {
+  border: 2px solid white;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.slider {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.slider section p{
+  font-size: 60px;
+  color: #F6BD60;
+  filter: none;
+}
+.slide1{
+  background: url(./bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide2{
+  background: url(./bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide3{
+  background: url(./bg9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide4{
+  background: url(./bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left, .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.arrow i {
+  font-size: 40px;
+  user-select: none;
+  color: white;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);;
+}
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+.control ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+.control ul li {
+  width: 10px;
+  height: 10px;
+  background: white; 
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.control ul li.selected {
+  background: transparent;
+}
+
+
+/*------------------------------------------Acceuil----------------------------------------------*/
+.acceuil{
+  margin-right: 5%;
+  margin-left: 5%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation{
+  background: #84A59D;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  margin-top: 5% 
+}
+.presentation img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-start;
+  margin: 50px;
+}
+.presentation p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.café{
+  height: 400px;
+  width: 100%;
+  display: flex;
+}
+
+.café img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-end;
+  margin: 50px;
+}
+
+.café p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.librairie{
+  background: #84A59D;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.librairie img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-start;
+  margin: 50px;
+}
+
+.librairie p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.presentation h4{
+  font-size: 35px;
+  margin: 50px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.café h4{
+  font-size: 35px;
+  margin: 50px;
+  color: #F6BD60;
+  font-family: 'Oswald', sans-serif;
+}
+
+.librairie h4{
+  font-size: 35px;
+  margin: 50px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/*--------------------------------------------Footer-------------------------------------------------*/
+footer{
+  background-color: #F6BD60;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-bottom: 2%;
+  font-size: 16px; 
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contact{
+  text-align: center;  
+}
+.contact a{
+  text-decoration: none;
+}
+i{
+  padding: 10px;
+  color: white;
+}
+
+iframe{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*-------------------------------------Derniers Arrivages & Coup de coeur---------------------------*/
+
+.books{
+  background-color: #84A59D;
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 315px;
+  height: 475px;
+  padding: 2%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: #84A59D;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #F2F2F0;
+  color: black;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: rotateY(180deg);
+}
+.flip-box-back a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.flip-box-back a:hover{
+  color:#84A59D;
+}
+
+
+/*---------------------------------------------Tarifs----------------------------------------------*/
+
+.carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+
+/*----------------------------------------------Formulaire-----------------------------------------*/
+.formulaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #84A59D;
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+input[type=text] {
+  padding:10px;
+  width: 200px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type=email] {
+  padding:10px;
+  width: 200px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type=submit] {
+  padding: 10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  margin-top: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.langue{
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------Expo---------------------------------------------------------*/
+
+
+.exposition{
+  margin: 5%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.artiste{
+  background: #84A59D;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+.artiste img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-start;
+  margin: 70px
+}
+.artiste p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.artiste h4{
+  font-size: 35px;
+  margin: 50px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.parcours{
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+
+.parcours img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-end;
+  margin: 70px;
+}
+
+.parcours p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.parcours h4{
+  font-size: 35px;
+  margin: 50px;
+  color: #F6BD60;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.gallery{
+  background: #84A59D;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.gallery h4{
+  font-size: 35px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  
+}
+
+
+/*---------------------------------------Echange-----------------------------------------------------*/
+
+.explication{
+  margin: 5%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.echange{
+  background: #84A59D;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+.echange img{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  align-self: flex-start;
+  margin: 70px
+}
+
+.echange p{
+  flex: 1 1 auto;
+  margin: 50px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.echange h4{
+  font-size: 35px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin: 50px;
+}
+
+/*--------------------------Bookclub-----------------------------*/
+
+.bookclub{
+  background: #84A59D;
+  color: white;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  
+}
+@media (max-width: 1300px){
+  .presentation p, .café p, .librairie p, .echange p, .artiste p, .parcours p{
+    font-size: 14px;
+    margin: 30px;
+
+  }
+  .presentation img, .café img, .librairie img{
+    width: 350px;
+    margin: 30px;
+  }
+}
+
